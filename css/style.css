@@ -1,0 +1,127 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* header */
+.header_background_color {
+  background-color: #02160b;
+}
+
+.header_background {
+  background-image: url(../img/header-background.png);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logotype {
+  width: 222px;
+  margin: 18px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.header_logo_icon_img {
+  width: 70px;
+  height: 60px;
+}
+
+.header_menu {
+  margin: 20px 0 0;
+}
+
+.header_menu_list {
+  width: 479px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu_item {
+  list-style: none;
+}
+
+.header_menu_link_img {
+  padding-top: 4px;
+}
+
+.header_menu_link {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  color: #f7f7f7;
+  display: block;
+}
+
+.button {
+  border: 2px solid #cd6326;
+  border-radius: 5px;
+  padding: 10px 23px 10px;
+}
+
+.header_menu_item_button {
+  font-family: 'Roboto';
+  font-size: 23px;
+  line-height: 27px;
+  color: #f7f7f7;
+}
+
+/* survival */
+.survival {
+  max-width: 1200px;
+  margin: 119px auto 0;
+  padding-bottom: 240px;
+}
+
+.survival_title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #cd6326;
+}
+
+.survival_text {
+  width: 278px;
+  margin: 51px 0 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 27.1px;
+  color: #f7f7f7;
+}
+
+.survival_button {
+  background: #cd6326;
+  border-radius: 5px;
+  width: 160px;
+}
+
+.survival_button_link {
+  display: block;
+  padding: 17px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
+}
