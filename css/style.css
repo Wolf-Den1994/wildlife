@@ -261,8 +261,90 @@
   border: 1px solid #cd6326;
   border-radius: 0px 5px 5px 0px;
   cursor: pointer;
-  /* padding: 16px 16px; */
   width: 120px;
   height: 60px;
 }
 
+
+/* footer */
+.footer_background_color {
+  background-color: #181617;
+}
+
+.footer_background {
+  background: url(../img/footer-background.png);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer_menu {
+  padding: 150px 120px 129px;
+}
+
+.footer_menu_list,
+.footer_second_menu_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_menu_item,
+.footer_second_menu_item {
+  list-style-type: none;
+}
+
+.footer_menu_link_page {
+  margin-bottom: 25px;
+}
+
+.footer_menu_link_page_art {
+  margin-left: 60px;
+}
+
+.footer_menu_link_page_about {
+  margin-right: 11px;
+}
+
+.footer_menu_link_page_learn {
+  margin-right: 45px;
+}
+
+.footer_menu_link_page_social {
+  margin-top: 5px;
+}
+
+.footer_menu_link {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+}
+
+.footer_menu_link_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 222px;
+}
+
+.footer_logo_name {
+  margin: 0 0 25px;
+}
+
+.footer_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.footer_second_menu_list {
+  width: 240px;
+}
+
+.link_youtube > img{
+  width: 40px;
+  height: 40px;
+}
