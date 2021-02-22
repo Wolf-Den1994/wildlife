@@ -189,7 +189,7 @@
 .latest_slider_item_img_title {
   position: absolute;
   left: 0;
-  bottom: 76px;;
+  bottom: 76px;
   width: 100%;
   z-index: 5;
   font-family: 'Open Sans', sans-serif;
@@ -211,3 +211,58 @@
   font-size: 17px;
   line-height: 27px;
 }
+
+/* getnot */
+.getnot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getnot_title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: #333333;
+  margin: 0 0 60px;
+}
+
+.getnot_dispatch_form {
+  display: flex;
+  margin: 0 0 239px;
+}
+
+::placeholder {
+  color: #666666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  line-height: 27px;
+  align-items: center;
+}
+
+.getnot_dispatch_form_example_email {
+  border: 1px #666 solid;
+  opacity: 0.5;
+}
+
+.getnot_dispatch_form_example_input {
+  padding: 26px 363px 17px 14px;
+  background-color: #ccc;
+}
+
+.getnot_dispatch_form_example_btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
+  background: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  /* padding: 16px 16px; */
+  width: 120px;
+  height: 60px;
+}
+
