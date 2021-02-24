@@ -1,4 +1,8 @@
 /* general */
+html {
+  background-color: #181617;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@
 .header_background {
   background-image: url(../img/header-background.png);
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 
 .header {
@@ -24,12 +28,13 @@
   align-items: center;
 }
 
-.header_logotype {
+.header_logotype_link {
   width: 222px;
-  margin: 18px 0 0;
+  margin: 17px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 .header_title {
@@ -40,13 +45,21 @@
   color: #f7f7f7;
 }
 
+.header_logo_icon {
+  margin: 2px 0 0;
+}
+
 .header_logo_icon_img {
   width: 70px;
   height: 60px;
 }
 
+.header_logo_name {
+  margin: 0 0 2px;
+}
+
 .header_menu {
-  margin: 20px 0 0;
+  margin: 16px 0 0;
 }
 
 .header_menu_list {
@@ -61,7 +74,17 @@
 }
 
 .header_menu_link_img {
+  background: url(../img/icon/search.svg) no-repeat;
+  width: 32px;
+  height: 32px;
   padding-top: 4px;
+}
+
+.header_menu_link_img:hover {
+  filter: grayscale(0.1);
+  transition: all 0.25s ease-in-out;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .header_menu_link {
@@ -72,10 +95,27 @@
   display: block;
 }
 
+.header_menu_link:hover {
+  color: #cd6326;
+}
+
+.header_menu_link:active {
+  color: #8F5613;
+}
+
 .button {
   border: 2px solid #cd6326;
   border-radius: 5px;
-  padding: 10px 23px 10px;
+}
+
+.button:hover {
+  color: #fff;
+  background: #cd6326;
+}
+
+.button:active {
+  border: 2px solid #8F5613;
+  background: #8F5613;
 }
 
 .header_menu_item_button {
@@ -83,13 +123,18 @@
   font-size: 23px;
   line-height: 27px;
   color: #f7f7f7;
+  padding: 10px 23px 10px;
+}
+
+.header_menu_item_button:hover {
+  color: #f7f7f7;
 }
 
 /* survival */
 .survival {
   max-width: 1200px;
-  margin: 119px auto 0;
-  padding-bottom: 240px;
+  margin: 117px auto 0;
+  padding-bottom: 239px;
 }
 
 .survival_title {
@@ -126,13 +171,21 @@
   color: #f7f7f7;
 }
 
+.survival_button:hover {
+  background: #E39128;
+}
+
+.survival_button:active {
+  background: #8F5613;
+}
+
 /* latest */
 .main_background_color {
   background-color: #ccc;
 }
 
 .latest_title {
-  margin: 120px 0 0;
+  margin: 121px 0 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 48px;
   line-height: 72px;
@@ -189,7 +242,7 @@
 .latest_slider_item_img_title {
   position: absolute;
   left: 0;
-  bottom: 76px;
+  bottom: 75px;
   width: 100%;
   z-index: 5;
   font-family: 'Open Sans', sans-serif;
@@ -265,7 +318,6 @@
   height: 60px;
 }
 
-
 /* footer */
 .footer_background_color {
   background-color: #181617;
@@ -278,7 +330,7 @@
 }
 
 .footer_menu {
-  padding: 150px 120px 129px;
+  padding: 150px 120px 125px;
 }
 
 .footer_menu_list,
@@ -298,19 +350,28 @@
 }
 
 .footer_menu_link_page_art {
-  margin-left: 60px;
+  margin-left: 51px;
 }
 
 .footer_menu_link_page_about {
-  margin-right: 11px;
+  margin-right: 2px;
 }
 
 .footer_menu_link_page_learn {
-  margin-right: 45px;
+  margin-right: 35px;
 }
 
 .footer_menu_link_page_social {
+  margin-left: 2px;
   margin-top: 5px;
+}
+
+.footer_menu_link:hover {
+  color: #cd6326;
+}
+
+.footer_menu_link:active {
+  color: #8F5613;
 }
 
 .footer_menu_link {
@@ -326,6 +387,10 @@
   justify-content: space-between;
   align-items: center;
   width: 222px;
+}
+
+.footer_logo_icon {
+  margin: 0 0 2px;
 }
 
 .footer_logo_name {
@@ -344,7 +409,44 @@
   width: 240px;
 }
 
-.link_youtube > img{
+.link_facebook,
+.link_instagram,
+.link_pinterest,
+.link_youtube {
   width: 40px;
   height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link_facebook {
+  background-image: url(../img/icon/facebook.svg);
+}
+
+.link_instagram {
+  background-image: url(../img/icon/inst.svg);
+}
+
+.link_pinterest {
+  background-image: url(../img/icon/pinterest.svg);
+}
+
+.link_youtube {
+  background-image: url(../img/icon/YouTube.svg);
+  background-size: contain;
+}
+
+.link_facebook:hover,
+.link_youtube:hover,
+.link_instagram:hover,
+.link_pinterest:hover {
+  filter: grayscale(0.1);
+  transition: all 0.25s ease-in-out;
+  transform: scale(1.2);
+}
+
+.link_youtube:hover {
+  transition: all 2.5s ease-in-out;
+  transform: scale(1.2) rotate(360deg);
 }
