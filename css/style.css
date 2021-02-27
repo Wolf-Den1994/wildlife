@@ -18,6 +18,7 @@ html {
   background-image: url(../img/header-background.png);
   max-width: 1440px;
   margin: 1px auto 0;
+  box-shadow: inset 0 0 4px 4px #02160B;
 }
 
 .header {
@@ -28,7 +29,7 @@ html {
   align-items: center;
 }
 
-.header_logotype_link {
+.header_logotype {
   width: 222px;
   margin: 17px 0 0;
   display: flex;
@@ -83,8 +84,13 @@ html {
 .header_menu_link_img:hover {
   filter: grayscale(0.1);
   transition: all 0.25s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
+  background: url(../img/icon/search_hover.svg) no-repeat;
   cursor: pointer;
+}
+
+.header_menu_link_img:active {
+  background: url(../img/icon/search_active.svg) no-repeat;
 }
 
 .header_menu_link {
@@ -327,6 +333,15 @@ html {
   background: url(../img/footer-background.png);
   max-width: 1440px;
   margin: 0 auto;
+  box-shadow: inset 0 0 4px 4px #181617;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .footer_menu {
@@ -338,6 +353,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 480px;
 }
 
 .footer_menu_item,
@@ -350,7 +366,7 @@ html {
 }
 
 .footer_menu_link_page_art {
-  margin-left: 51px;
+  margin-left: 10px;
 }
 
 .footer_menu_link_page_about {
@@ -358,12 +374,12 @@ html {
 }
 
 .footer_menu_link_page_learn {
-  margin-right: 35px;
+  margin-right: -6px;
 }
 
 .footer_menu_link_page_social {
   margin-left: 2px;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 
 .footer_menu_link:hover {
@@ -390,12 +406,12 @@ html {
 }
 
 .footer_logo_icon {
-  margin: 0 0 2px;
+  margin: 22px 0 0;
 }
-
+/* 
 .footer_logo_name {
   margin: 0 0 25px;
-}
+} */
 
 .footer_title {
   font-family: 'Roboto', sans-serif;
